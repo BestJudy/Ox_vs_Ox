@@ -33,9 +33,9 @@ green = (26,63,12)
 #backround images
 bg_image = pygame.image.load('./python02/bg.jpeg').convert_alpha()
 #panel image
-panel_img = pygame.image.load('./flappy-bird-assets/sprites/base.png').convert()
+panel_img = pygame.image.load('./python02/flappy-bird-assets/sprites/base.png').convert()
 #sword image
-sword_image = pygame.image.load('./flappy-bird-assets/sprites/yellowbird-midflap.jepeg').convert_alpha()
+sword_image = pygame.image.load('./python02/flappy-bird-assets/sprites/yellowbird-midflap.png').convert_alpha()
 
 
 #create func rtuhg
@@ -122,7 +122,7 @@ class fighter():
     def attack(self,target):
         #deal damage to enemy
         rand = random.randint(-5,5)
-        damage = self.strengh + rand
+        damage = self.strength + rand
         target.hp -= damage
         #check if tarterg erdier
         if target.hp < 1:
